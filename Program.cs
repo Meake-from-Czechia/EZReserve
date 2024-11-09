@@ -1,3 +1,6 @@
+using DotNetEnv;
+
+
 namespace EZReserve
 {
     internal static class Program
@@ -10,8 +13,9 @@ namespace EZReserve
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+            Env.Load();
             ApplicationConfiguration.Initialize();
-            Application.Run(new );
+            Application.Run(new MainMenu());
         }
     }
 }
