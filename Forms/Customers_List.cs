@@ -98,8 +98,9 @@ namespace EZReserve
         private void button_Delete_Click(object sender, EventArgs e)
         {
             var deletedCustomer = (Customer)dataGridView_Customers.SelectedRows[0].DataBoundItem;
-            DialogResult dialogResult = MessageBox.Show("Opravdu chcete smazat zákazníka " + 
+            DialogResult dialogResult = MessageBox.Show("Opravdu chcete smazat zákazníka " +
                 deletedCustomer.FirstName + " " + deletedCustomer.LastName + "?", "Smazání zákazníka", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.No) return;
             db.Customers.Remove(deletedCustomer);
             db.SaveChanges();
             customers.Remove(deletedCustomer);
