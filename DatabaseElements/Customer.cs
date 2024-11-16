@@ -22,5 +22,10 @@ namespace EZReserve
         [Column("PostalCode")]
         public string PostalCode { get; set; }
         public List<Reservation> Reservations { get; set; }
+        public string FullName => $"{FirstName} {LastName}";
+        public override string ToString()
+        {
+            return $"{FirstName} {LastName}";
+        }
     }
 }

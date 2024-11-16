@@ -15,6 +15,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Forms\Reservations_Modify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Reservations_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Reservations_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update=".env">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

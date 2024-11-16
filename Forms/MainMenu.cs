@@ -30,7 +30,8 @@ namespace EZReserve
 
         private void button_Reservations_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ještě není implementováno.");
+            var reservationsList = new Reservations_List();
+            reservationsList.Show();
         }
 
         private void button_Reporting_Click(object sender, EventArgs e)
