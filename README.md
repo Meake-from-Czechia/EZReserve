@@ -1,7 +1,10 @@
 # WinForms reservation program
 A basic CRUD program for managing reservations and customers. Uses EF Core for all database operations.
-Right now, only the management of customers is implemented. That will be changed in the following weeks.
 
+## Features
+- Add, edit, view and delete customers and reservations.
+- Export data to csv or Excel file
+- Show graph with room usage
 
 ## Usage
 Needs '.env' file in root of solution or next to binary.
