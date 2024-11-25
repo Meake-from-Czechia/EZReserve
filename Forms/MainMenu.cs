@@ -36,7 +36,8 @@ namespace EZReserve
 
         private void button_Reporting_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ještě není implementováno.");
+            var reportingMenu = new Reporting_Menu();
+            reportingMenu.Show();
         }
     }
 }

@@ -1,9 +1,11 @@
 using DotNetEnv;
 
+using System.Net;
+
 
 namespace EZReserve
 {
-    internal static class Program
+    internal static partial class Program
     {
         /// <summary>
         ///  The main entry point for the application.
@@ -15,6 +17,9 @@ namespace EZReserve
             // see https://aka.ms/applicationconfiguration.
             Env.Load();
             ApplicationConfiguration.Initialize();
+
+
+           
             Application.Run(new MainMenu());
         }
     }
